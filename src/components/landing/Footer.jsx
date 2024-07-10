@@ -1,12 +1,12 @@
 const style = {
   textDecoration: "none",
   color: "white",
-  marginRight: "0.3rem",
+  marginRight: "none",
 };
 
 const githubProfiles = [
   {
-    name: "Aritra",
+    name: "GitHub",
     link: "https://github.com/aritrasen12345",
   },
 ];
