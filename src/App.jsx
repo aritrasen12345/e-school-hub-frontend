@@ -2,12 +2,12 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ResetPassword from "./pages/ResetPassword";
 import VerifySchool from "./pages/VerifySchool";
-import PrivateRoute from "./pages/PrivateRoute";
 import Dashboard from "./pages/Dashboard";
 import ManageStudent from "./pages/ManageStudent";
 import ManageStandard from "./pages/ManageStandard";
 import Settings from "./pages/Settings";
-import PageNotFound from "./pages/PageNotFound";
+import PageNotFound from "./pages/404";
+import PrivateRoute from "./components/PrivateRoute";
 
 const App = () => {
   return (

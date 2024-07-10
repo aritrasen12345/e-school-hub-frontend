@@ -1,6 +1,6 @@
 import { Header } from "antd/es/layout/layout";
-
-const { theme, Layout } = require("antd");
+import Sidebar from "../components/sidebar/Sidebar";
+import { Layout, theme } from "antd";
 
 const AppLayout = (props) => {
   const {
@@ -9,7 +9,7 @@ const AppLayout = (props) => {
 
   return (
     <Layout>
-      {/** // TODO Sidebar */}
+      <Sidebar />
       <Layout>
         <Header
           style={{
