@@ -12,7 +12,7 @@ import styles from "./styles/feature.module.css";
 const Feature = () => {
   return (
     <div className="wrapper">
-      <h1 style={{ paddingTop: "2rem" }}>Why DigiSchool?</h1>
+      <h1 style={{ paddingTop: "2rem" }}>Why E-School-Hub?</h1>
       <Row gutter={[16, 16]} style={{ margin: 15 }}>
         <Col xs={24} sm={12} md={8}>
           <Card
