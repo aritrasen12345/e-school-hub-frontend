@@ -16,7 +16,7 @@ const ForgotPasswordModal = ({ open, onCancel, colseModal }) => {
     setIsLoading(true);
     try {
       const { isOk, message } = await networkRequest(
-        "/forgotPassword/sendMail",
+        "/auth/send_email",
         "POST",
         reqBody
       );
