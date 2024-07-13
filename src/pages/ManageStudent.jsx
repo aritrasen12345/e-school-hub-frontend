@@ -337,5 +337,4 @@ const ManageStudent = () => {
     </AppLayout>
   );
 };
-
 export default ManageStudent;

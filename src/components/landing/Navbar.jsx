@@ -16,7 +16,7 @@ const Navbar = () => {
   };
   return (
     <Menu id="navmenu" mode="horizontal" style={{ height: "10vh" }}>
-      <h2>E-School-Hub</h2>
+      <h2>E-School-hub</h2>
       <div
         id="authdiv"
         style={{ marginTop: "auto", marginBottom: "auto", marginLeft: "auto" }}

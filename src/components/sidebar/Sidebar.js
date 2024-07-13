@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { Menu, notification, Layout } from "antd";
+import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import { Menu, Layout, notification } from "antd";
 import { MdManageAccounts } from "react-icons/md";
 import { SiGoogleclassroom } from "react-icons/si";
 import {
@@ -12,19 +12,21 @@ import styles from "./sidebar.module.css";
 
 const { Sider } = Layout;
 
-const getItem = (keyboard, icon, children, label, type) => {
+function getItem(label, key, icon, children, type) {
   return {
-    keyboard,
+    key,
     icon,
     children,
     label,
     type,
   };
-};
+}
 
 const items = [
   getItem("Dashboard", "/dashboard", <DashboardOutlined />),
+
   getItem("Manage Student", "/manage_student", <MdManageAccounts />),
+
   getItem("Manage Standard", "/manage_standard", <SiGoogleclassroom />),
 ];
 
@@ -34,7 +36,7 @@ const bottomItems = [
   getItem("Logout", "/", <LogoutOutlined />),
 ];
 
-const Sidebar = () => {
+function Sidebar() {
   const location = useLocation();
   const [selectedKeys, setSelectedKeys] = useState();
 
@@ -53,7 +55,7 @@ const Sidebar = () => {
       localStorage.removeItem("accessToken");
       localStorage.removeItem("refreshToken");
       notification.success({
-        message: "User Logout Successfully!",
+        message: "User Logout Successfully",
       });
     }
   };
@@ -97,6 +99,6 @@ const Sidebar = () => {
       </div>
     </Sider>
   );
-};
+}
 
 export default Sidebar;

@@ -10,11 +10,10 @@ const PrivateRoute = (props) => {
   useEffect(() => {
     if (!isAuthenticated) {
       notification.error({
-        message: "Please log in to access!",
+        message: "Please log in to access",
       });
       navigate("/");
     }
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

@@ -1,13 +1,13 @@
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import ResetPassword from "./pages/ResetPassword";
 import VerifySchool from "./pages/VerifySchool";
+import ResetPassword from "./pages/ResetPassword";
 import Dashboard from "./pages/Dashboard";
 import ManageStudent from "./pages/ManageStudent";
 import ManageStandard from "./pages/ManageStandard";
 import Settings from "./pages/Settings";
-import PageNotFound from "./pages/404";
 import PrivateRoute from "./components/PrivateRoute";
+import PageNotFound from "./pages/404";
 
 const App = () => {
   return (

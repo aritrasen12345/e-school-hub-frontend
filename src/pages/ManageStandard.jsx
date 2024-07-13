@@ -21,7 +21,6 @@ const ManageStandard = () => {
     "geekblue",
     "purple",
   ];
-
   const getRandomColor = () => {
     const randomColorIndex = Math.floor(Math.random() * color.length);
     const randomColor = color[randomColorIndex];

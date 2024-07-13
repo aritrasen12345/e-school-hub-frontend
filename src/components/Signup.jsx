@@ -26,7 +26,7 @@ const Signup = ({ valueFromSignup }) => {
       email: values?.email,
       schoolName: values?.schoolName,
       password: values?.password,
-      confirm_Password: values?.confirm_Password,
+      confirmPassword: values?.confirmPassword,
     };
     setIsLoading(true);
     try {
@@ -135,7 +135,7 @@ const Signup = ({ valueFromSignup }) => {
         <Row>
           <Col offset={4} span={20} style={{ margin: "auto" }}>
             <Form.Item
-              name="confirm_Password"
+              name="confirmPassword"
               label="Confirm password"
               dependencies={["password"]}
               hasFeedback

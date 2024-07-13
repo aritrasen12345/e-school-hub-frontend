@@ -1,12 +1,12 @@
-import { Header } from "antd/es/layout/layout";
-import Sidebar from "../components/sidebar/Sidebar";
+import React from "react";
+import Header from "../components/navs/Header.jsx";
+import Sidebar from "../components/sidebar/Sidebar.js";
 import { Layout, theme } from "antd";
 
 const AppLayout = (props) => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
-
   return (
     <Layout>
       <Sidebar />
@@ -22,5 +22,4 @@ const AppLayout = (props) => {
     </Layout>
   );
 };
-
 export default AppLayout;

@@ -8,7 +8,6 @@ const PageNotFound = () => {
     e.preventDefault();
     navigate("/");
   };
-
   return (
     <Result
       status="404"
